@@ -40,13 +40,13 @@ import android.util.Size;
 import android.view.KeyEvent;
 import android.view.WindowManager;
 import android.widget.Toast;
-import java.nio.ByteBuffer;
 
 import com.spyder.tftest.env.ImageUtils;
 import com.spyder.tftest.env.Logger;
 
+import java.nio.ByteBuffer;
+
 // Explicit import needed for internal Google builds.
-import com.spyder.tftest.R;
 
 public abstract class CameraActivity extends Activity implements OnImageAvailableListener, Camera.
         PreviewCallback {
@@ -57,7 +57,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
-  private boolean debug = false;
+  private boolean debug = true;
 
   private Handler handler;
   private HandlerThread handlerThread;
@@ -297,8 +297,9 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
           continue;
         }
 
-        useCamera2API = isHardwareLevelSupported(characteristics,
-            CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_FULL);
+        useCamera2API = true;
+//        useCamera2API = isHardwareLevelSupported(characteristics,
+//            CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_FULL);
         LOGGER.i("Camera API lv2?: %s", useCamera2API);
         return cameraId;
       }
