@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TFtest.iml" filepath="$PROJECT_DIR$/TFtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-tensorflow-demo.iml" filepath="$PROJECT_DIR$/android-tensorflow-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -57,7 +57,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
-  private boolean debug = true;
+  private boolean debug = false;
 
   private Handler handler;
   private HandlerThread handlerThread;

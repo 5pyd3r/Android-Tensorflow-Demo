@@ -35,16 +35,17 @@ import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
 import android.widget.Toast;
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+
 import com.spyder.tftest.OverlayView.DrawCallback;
 import com.spyder.tftest.env.BorderedText;
 import com.spyder.tftest.env.ImageUtils;
 import com.spyder.tftest.env.Logger;
 import com.spyder.tftest.tracking.MultiBoxTracker;
-import com.spyder.tftest.R;
+
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track

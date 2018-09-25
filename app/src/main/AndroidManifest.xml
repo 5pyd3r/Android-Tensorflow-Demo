@@ -33,36 +33,9 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@style/MaterialTheme">
 
-        <activity android:name=".ClassifierActivity"
-                  android:screenOrientation="portrait"
-                  android:label="@string/activity_name_classification">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
         <activity android:name=".DetectorActivity"
                   android:screenOrientation="portrait"
                   android:label="@string/activity_name_detection">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".StylizeActivity"
-                  android:screenOrientation="portrait"
-                  android:label="@string/activity_name_stylize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".SpeechActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/activity_name_speech">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
